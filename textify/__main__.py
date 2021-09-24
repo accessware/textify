@@ -1,10 +1,9 @@
 import sys
-sys.path.append("..")
 import textify
 
-if __name__ == "__main__":
+def cli():
 	if len(sys.argv) != 3:
-		print("Usage: rtf.py <input_file> <output_file>")
+		print("Usage: textify <input_file> <output_file>")
 		sys.exit()
 	input_file = sys.argv[1]
 	output_file = sys.argv[2]
@@ -13,3 +12,6 @@ if __name__ == "__main__":
 	file.write(text)
 	file.close()
 	print("Done!")
+
+if __name__ == "__main__":
+	cli()
