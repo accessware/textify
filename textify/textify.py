@@ -1,5 +1,5 @@
-from parsers.rtf import RtfParser
-import exceptions
+from .parsers.rtf import RtfParser
+from . import exceptions
 
 def textify(filename):
 	if filename.lower().endswith(".rtf"):
